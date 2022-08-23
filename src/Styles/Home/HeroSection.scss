@@ -1,0 +1,51 @@
+
+.Slider {
+    .slick-next {
+        right: 40px;
+    }
+    .slick-next:before {
+        content: url("../../images/right-icon.svg");
+        opacity: 1;
+    }
+    .slick-prev {
+        left: 40px;
+        z-index: 1000;
+    }
+    .slick-prev:before {
+        content: url("../../images/left-icon.svg");
+        opacity: 1;
+    }
+    .pt_8 {
+        padding-top: 80px;
+        border-radius: 0px !important;
+    }
+    .silder_1 {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@mixin first {
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    font-weight: 600;
+}
+.Slider {
+    .text-primary {
+        @include first;
+        top: 45%;
+        font-size: 65px;
+        color: white;
+        text-align: center;
+        transform: translate(-50%, -45%);
+    }
+    .started-btn {
+        @include first;
+        top: 70%;
+        transform: translate(-50%, -70%);
+        padding: 8px 22px;
+    }
+}

@@ -1,0 +1,48 @@
+
+.Feedback {
+    .feedback_box {
+        .feedback_inner {
+            max-width: 50%;
+        }
+    }
+    .feedback_slider {
+        background: #ffffff;
+        border: 1px solid #e8e8e8;
+        border-radius: 5px;
+        max-width: 97%;
+        .primary_padding{
+            padding: 40px 25px 20px 28px;
+        }
+        .secondary_padding{
+            padding: 5px 25px 20px 28px;
+            
+        }
+        .tertiary_padding{
+            padding: 5px 25px 20px 28px;
+        }
+    }
+    .feedbacker-name {
+        font-weight: 600;
+        font-size: 18px;
+        color: #4a4a4a;
+    }
+
+    .slick-next {
+        right: 15px;
+    }
+    .slick-next:before {
+        content: url("../../images/slider-right.svg");
+        opacity: 1;
+    }
+    .slick-prev {
+        left: -35px;
+        z-index: 1000;
+    }
+    .slick-prev:before {
+        content: url("../../images/slider-left.svg");
+        opacity: 1;
+    }
+    .padding_right{
+        padding-right: 10px;
+    }
+}

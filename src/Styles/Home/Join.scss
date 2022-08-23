@@ -1,0 +1,29 @@
+
+.join {
+    .join_inner {
+        background: #289bde;
+        border-radius: 5px;
+    }
+    .join_heading {
+        font-weight: 600;
+        font-size: 45px;
+        color: #ffffff;
+        padding-top: 10px;
+    }
+    .join_tagline {
+        font-weight: 400;
+        font-size: 16px;
+        color: #f4f4f4;
+        max-width: 60%;
+        padding: 20px 0px;
+    }
+    .btn {
+        .register_btn {
+            font-weight: 600;
+            font-size: 20px;
+            background-color: white;
+            color: #289bde;
+            text-transform: unset;
+        }
+    }
+}

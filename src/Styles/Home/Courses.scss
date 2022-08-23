@@ -1,0 +1,32 @@
+
+.courses {
+    .courses_tag {
+        max-width: 40%;
+    }
+
+    .cources_inner {
+        max-width: 50%;
+    }
+}
+.box_inner {
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    height: 95%;
+
+    .box_heading {
+        font-size: 25px;
+        font-weight: 600;
+        color: #4a4a4a;
+    }
+
+    .box_price {
+        font-size: 18px;
+        font-weight: 600;
+        color: #289bde;
+    }
+}
+.cources_btn {
+    .btn {
+        padding: 8px 22px;
+    }
+}

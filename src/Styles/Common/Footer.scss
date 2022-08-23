@@ -1,0 +1,28 @@
+.Footer {
+    background-color: black;
+    color: white;
+    max-width: 100% !important;
+    height: 400px;
+    .footer_logo {
+        font-weight: 600;
+        font-size: 40px;
+        color: #ffffff;
+    }
+    .footer_tagline {
+        font-weight: 400;
+        font-size: 16px;
+        color: #e8e8e8;
+        max-width: 20%;
+        text-align: center;
+    }
+    .footer_terms {
+        font-weight: 400;
+        font-size: 15px;
+        color: #e8e8e8;
+    }
+    .footer_icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
