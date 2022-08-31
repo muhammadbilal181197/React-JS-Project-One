@@ -29,12 +29,12 @@ const question = [
 const Questions = () => {
     return (
         <Box>
-            <Container className="container Questions" sx={{ pt: 12 }}>
-                <Box align="center" className="feedback_box" sx={{ pb: 6 }}>
+            <Container className="container Questions" sx={{ pt: {md:10, xs:3}, pb:{md:8 ,xs:4}}}>
+                <Box align="center" className="feedback_box" sx={{ pb: {md:6 , xs:4} }}>
                     <Typography variant="h2" className=" text_primary font_poppins" sx={{ textAlign: "center" }}>
                         Frequently Asked Questions
                     </Typography>
-                    <Typography variant="h6" className="questions_inner text_secondary font_poppins" sx={{ textAlign: "center", pt: 1 }}>
+                    <Typography variant="h6" className="questions_inner text_secondary font_poppins" sx={{ textAlign: "center", pt:{md:2, xs:0} }}>
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                     </Typography>
                 </Box>

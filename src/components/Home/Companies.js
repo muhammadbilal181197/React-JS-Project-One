@@ -10,7 +10,7 @@ import "../../Styles/Home/Companies.scss";
 
 const Companies = () => {
     return (
-        <Box>
+        <Box sx={{display:{xs:"none" , lg:"block"}}}>
             <Container className="container Companies" sx={{ pt: 12, pb: 10 }}>
                 <Box align="center"  sx={{ pb: 6 }}>
                     <Typography variant="h2" className=" text_primary font_poppins" sx={{ textAlign: "center" }}>

@@ -37,3 +37,9 @@ body{
     text-transform: unset !important;
     background-color: #289bde !important;
 }
+
+@media (max-width: 600px) {
+    .btn_primary{
+        font-size: 18px !important;
+    }
+}

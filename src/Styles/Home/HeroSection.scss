@@ -1,5 +1,8 @@
 
 .Slider {
+   .img2{
+    display: none;
+   }
     .slick-next {
         right: 40px;
     }
@@ -16,7 +19,7 @@
         opacity: 1;
     }
     .pt_8 {
-        padding-top: 80px;
+        padding-top: 30px;
         border-radius: 0px !important;
     }
     .silder_1 {
@@ -25,7 +28,12 @@
             height: auto;
         }
     }
+    .img-fluid{
+        max-width: 100%;
+        height: auto;
+    }
 }
+
 
 @mixin first {
     position: absolute;
@@ -48,4 +56,106 @@
         transform: translate(-50%, -70%);
         padding: 8px 22px;
     }
+    .layout{
+        @include first;
+        top: 50%;
+        text-align: center;
+        transform: translate(-50%, -45%);
+        color: #F4F4F4;
+        display: none;
+    }
+}
+
+@media (max-width:1536px)
+{
+
+}
+@media (max-width:1200px)
+{
+    .Slider{
+        .text-primary{
+            font-size: 50px;
+        }
+        
+     }  
+}
+@media (max-width:900px)
+{
+ .Slider{
+    .text-primary{
+        font-size: 40px;
+        top: 30%;
+    }
+    .btn_primary{
+        font-size: 18px !important;
+        top: 87%;
+    }
+    .layout{
+        display: block;
+        top: 60%;
+        left: 40%;
+        transform: translate(-35%, -45%);
+    }
+ }   
+}
+@media (max-width:600px)
+{
+    .Slider{
+        .text-primary{
+            font-size: 23px;
+            top: 75px;
+        }
+        .btn_primary{
+            font-size: 12px !important;
+            top: 85%;
+        }
+        .layout{
+            font-size: 14px !important;
+            top: 55%;
+            line-height: 20px !important;
+        }
+        .pt_8{
+            padding-top: 8px;
+        }
+        .slick-next:before {
+            display: none;
+        }
+        .slick-prev:before{
+            display: none;
+        }
+     } 
+    
+}
+@media (max-width:485px){
+    .Slider{
+        .text-primary{
+            font-size: 20px;
+            top: 65px;
+        }
+        .btn_primary{
+            font-size: 12px !important;
+            top: 80%;
+        }
+        .layout{
+            font-size: 12px !important;
+            top: 50%;
+            line-height: 20px !important;
+        }
+        .pt_8{
+            padding-top: 8px;
+        }
+        .img2{
+            display: block;
+            width: 100%;
+        }
+        .img1{
+            display: none;
+        }
+        .slick-next:before {
+            display: none;
+        }
+        .slick-prev:before{
+            display: none;
+        }
+     } 
 }

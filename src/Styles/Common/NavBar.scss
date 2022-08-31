@@ -1,19 +1,48 @@
-.navbar{
-    .register_btn{
-        font-weight:600;
-        color:#289BDE;
-        font-size:18px;
+.navbar {
+      .register_btn {
+        font-weight: 600;
+        color: #289bde;
+        font-size: 18px;
         text-transform: unset;
     }
-    .nav{
-        .nav-items{
+    .nav {
+        .nav-items {
             color: #777777;
-            font-size:18px;
+            font-size: 18px;
             text-transform: unset;
         }
     }
-    .brand_name{
+    .brand_name {
         font-size: 40px;
         font-weight: 600;
+    }
+}
+.header{
+    nav{
+        position: static;
+    }
+}
+
+@media (max-width: 1536px) {
+}
+@media (max-width: 1199px) {
+    
+}
+@media (max-width: 900px) {
+    .navbar{
+        .brand_name{
+            font-size: 35px;
+        }
+    }
+    .MuiList-root{
+        .MuiListItem-root{
+            margin: 12px 0 !important;
+        }}
+}
+@media (max-width: 600px) {
+    .navbar{
+        .brand_name{
+            font-size: 25px;
+        }
     }
 }

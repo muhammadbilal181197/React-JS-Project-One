@@ -17,7 +17,7 @@ function NavBar(props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ my: 2 }}>
-                MUI
+                Pro Edu
             </Typography>
             <Divider />
             <List>
@@ -29,36 +29,40 @@ function NavBar(props) {
                     </ListItem>
                 ))}
             </List>
+            <Grid item xs={4} sx={{display:"flex", justifyContent:"center"}}>
+                    <Button variant="outlined" className="font_poppins register_btn" sx={{display:{xs:"block" , sm:"none"} }}>Register</Button>
+                    </Grid>
         </Box>
     );
 
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <Box sx={{ display: "flex" }}>
+        <Box className="header" sx={{mt:2}} >
             <AppBar component="nav" sx={{boxShadow:"none", backgroundColor:"white", color:"black"}}>
         <Container className="container">
                 <Toolbar className="navbar" style={{padding:0}}>
-                    <IconButton  color="inherit" aria-label="open drawer" edge="start" onClick={handleDrawerToggle} sx={{ ml: 'auto', display: { sm: "none" } }}>
-                        <MenuIcon />
-                    </IconButton>
+                   
                    <Grid item xs={2}>
-                    <Typography className="font_poppins brand_name" variant="h6"  component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block" }}}>
+                    <Typography className="font_poppins brand_name" variant="h6"  component="div" sx={{ flexGrow: 1, display: { xs: "block" }}}>
                         Pro Edu
                     </Typography>
                     </Grid>
                     <Grid item xs={6} sx={{mx:"auto" }}>
-                    <Box  className="nav" sx={{ display: { xs: "none", sm: "block" }}}>
+                    <Box  className="nav" sx={{ display: { xs: "none", md: "block" }}}>
                         {navItems.map((item) => (
-                            <Button key={item} className="font_poppins nav-items" sx={{ px:3}}>
+                            <Button key={item} className="font_poppins nav-items"  sx={{px:{md:2, lg:3}  }}>
                                 {item}
                             </Button>
                         ))}
                     </Box>
                     </Grid>
                     <Grid item xs={4}>
-                    <Button variant="outlined" className="font_poppins register_btn">Register</Button>
+                    <Button variant="outlined" className="font_poppins register_btn" sx={{display:{xs:"none", sm:"block"}}}>Register</Button>
                     </Grid>
+                    <IconButton  color="inherit" aria-label="open drawer" edge="start" onClick={handleDrawerToggle} sx={{ml:2,  display: { md: "none" } }}>
+                        <MenuIcon />
+                    </IconButton>
                 </Toolbar>
                 </Container>
             </AppBar>
@@ -73,7 +77,7 @@ function NavBar(props) {
                         keepMounted: true, 
                     }}
                     sx={{
-                        display: { xs: "block", sm: "none" },
+                        display: { xs: "block", md: "none"},
                         "& .MuiDrawer-paper": {
                             boxSizing: "border-box",
                             width: 'auto',
